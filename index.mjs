@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import o from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@esm/index.mjs";var e=o;var n=function(o,n,r,t,s){if(arguments.length>3){if("closed"!==t&&"open"!==t)throw new TypeError(e('invalid argument. Fourth argument must be one of the following: "%s". Value: `%s`.',["closed","open"].join('", "'),t));if("closed"!==s&&"open"!==s)throw new TypeError(e('invalid argument. Fifth argument must be one of the following: "%s". Value: `%s`.',["closed","open"].join('", "'),s))}return"closed"===t||void 0===t?"closed"===s||void 0===s?o>=n&&o<=r:o>=n&&o<r:"closed"===s||void 0===s?o>n&&o<=r:o>n&&o<r};export{n as default};
-//# sourceMappingURL=index.mjs.map
