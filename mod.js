@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./mod.d.ts" />
+function e(){var e,o=arguments,n=o[0],t="https://stdlib.io/e/"+n+"?";for(e=1;e<o.length;e++)t+="&arg[]="+encodeURIComponent(o[e]);return t}function o(o,n,t,r,i){if(arguments.length>3){if("closed"!==r&&"open"!==r)throw new TypeError(e('invalid argument. Fourth argument must be one of the following: "%s". Value: `%s`.',["closed","open"].join('", "'),r));if("closed"!==i&&"open"!==i)throw new TypeError(e('invalid argument. Fifth argument must be one of the following: "%s". Value: `%s`.',["closed","open"].join('", "'),i))}return"closed"===r||void 0===r?"closed"===i||void 0===i?o>=n&&o<=t:o>=n&&o<t:"closed"===i||void 0===i?o>n&&o<=t:o>n&&o<t}export{o as default};
+//# sourceMappingURL=mod.js.map
