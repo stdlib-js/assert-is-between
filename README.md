@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBetween from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@esm/index.mjs';
+import isBetween from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@v0.1.1-esm/index.mjs';
 ```
 
 #### isBetween( value, a, b\[, left, right] )
@@ -138,7 +138,7 @@ bool = isBetween( 5, 3, 5, 'closed', 'open' );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import isBetween from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@esm/index.mjs';
+import isBetween from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@v0.1.1-esm/index.mjs';
 
 var bool;
 var a;
