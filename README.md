@@ -35,38 +35,30 @@ limitations under the License.
 
 > Test if a value is between two values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-between
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isBetween = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isBetween = require( 'path/to/vendor/umd/assert-is-between/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isBetween;
-})();
-</script>
+var isBetween = require( '@stdlib/assert-is-between' );
 ```
 
 #### isBetween( value, a, b\[, left, right] )
@@ -154,15 +146,10 @@ bool = isBetween( 5, 3, 5, 'closed', 'open' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-between@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var isBetween = require( '@stdlib/assert-is-between' );
 
 var bool;
 var a;
@@ -177,11 +164,6 @@ for ( i = 0; i < 100; i++ ) {
     bool = isBetween( v, a, b, 'open', 'closed' );
     console.log( '%d < %d <= %d: %s', a, v, b, bool.toString() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -241,8 +223,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-between.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-between
 
-[test-image]: https://github.com/stdlib-js/assert-is-between/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/assert-is-between/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/assert-is-between/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/assert-is-between/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-between/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-between?branch=main
@@ -273,7 +255,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-between-array]: https://github.com/stdlib-js/assert-is-between-array/tree/umd
+[@stdlib/assert/is-between-array]: https://github.com/stdlib-js/assert-is-between-array
 
 <!-- </related-links> -->
 
